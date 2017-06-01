@@ -9,8 +9,8 @@
 #import "PopoverView.h"
 #import "PopoverViewCell.h"
 
-static float const kPopoverViewMargin = 8.f; ///< 边距
-static float const kPopoverViewCellHeight = 40.f; ///< cell指定高度
+static float const kPopoverViewMargin = 12.f; ///< 边距
+static float const kPopoverViewCellHeight = 50.f; ///< cell指定高度
 static float const kPopoverViewArrowHeight = 13.f; ///< 箭头高度
 
 // convert degrees to radians
