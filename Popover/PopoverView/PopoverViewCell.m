@@ -9,7 +9,7 @@
 #import "PopoverViewCell.h"
 
 // extern
-float const PopoverViewCellHorizontalMargin = 15.f; ///< 水平边距
+float const PopoverViewCellHorizontalMargin = 20.f; ///< 水平边距
 float const PopoverViewCellVerticalMargin = 3.f; ///< 垂直边距
 float const PopoverViewCellTitleLeftEdge = 8.f; ///< 标题左边边距
 
@@ -75,11 +75,11 @@ float const PopoverViewCellTitleLeftEdge = 8.f; ///< 标题左边边距
     UIView *bottomLine = [[UIView alloc] init];
     bottomLine.backgroundColor = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.00];
     bottomLine.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.contentView addSubview:bottomLine];
+//    [self.contentView addSubview:bottomLine];
     _bottomLine = bottomLine;
     // Constraint
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bottomLine]|" options:kNilOptions metrics:nil views:NSDictionaryOfVariableBindings(bottomLine)]];
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[bottomLine(lineHeight)]|" options:kNilOptions metrics:@{@"lineHeight" : @(1/[UIScreen mainScreen].scale)} views:NSDictionaryOfVariableBindings(bottomLine)]];
+//    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[bottomLine]|" options:kNilOptions metrics:nil views:NSDictionaryOfVariableBindings(bottomLine)]];
+//    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[bottomLine(lineHeight)]|" options:kNilOptions metrics:@{@"lineHeight" : @(1/[UIScreen mainScreen].scale)} views:NSDictionaryOfVariableBindings(bottomLine)]];
 }
 
 #pragma mark - Public
